@@ -9,6 +9,7 @@
 :root {
     --main-color: rgb(233, 156, 56);
     --secondary-color: rgba(233, 156, 56, 0.748);
+    --black1: #1d1d1ff5;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
 }
 
 .nav h2 {
-    margin-left: 25px;
     font-size: 20px;
     color: rgb(56, 55, 55);
 
@@ -55,6 +55,35 @@ body {
 .nav div p:hover {
 
     color: rgb(0, 0, 0);
+}
+
+.nav .search-container .search-box {
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #ffffffe7;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.nav .search-container .search-box:focus {
+    background-color: white;
+}
+
+.nav .search-container button {
+    background-color: #1d1d1fd7;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.nav .search-container button:hover {
+    background-color:var(--black1);
+  
 }
 
 /* Navbar ends */
@@ -100,9 +129,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 900px;
     gap: 30px;
 
+}
+
+.classList-container .btn-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 19px;
+    width: 110px;
+}
+
+.classList-container .btn-container div p {
+    font-size: 19px;
 }
 
 .classList-container .btn-container button {
@@ -193,4 +235,4 @@ body {
 }
 
 
-/* Class list ends */
+/* ClaFs list ends */
